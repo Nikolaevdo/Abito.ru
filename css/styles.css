@@ -1,0 +1,82 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0A143A;
+    
+}
+.header{
+    max-width: 1146px;  /* Максимальная ширина */
+    margin: auto; /*выравнивание по середине*/
+    margin-bottom: 0px;
+    padding-top: 30px; /*Отступ сверху чтобы текст не сливался с краем страницы */
+}
+.navbar{
+    
+    display: flex; /*Делаем гибкий блок */
+    align-items: center; /*выравниваем обьекты по вертикале, по центру */
+    justify-content: space-between; /*Расбросать элементы по краям*/
+    margin-bottom: 24px; /*Для того чтобы search-panel не слипался с navbar*/
+}
+.navbar-menu{
+    margin-right: auto; /*Автоматический отступ справа*/
+}
+.menu{
+    list-style: none; /*Отключаем точки у маркированного списка меню*/
+    margin: 0; /*Обнуляем внешние отступы */
+    padding-left: 22px; /*Внутренний отступ слева как по макету*/
+    padding-right: 22px; /*Внутренний отступ cправа */
+    display: flex; /*Пункты меню автоматически распологаются по горизонтали*/
+}
+/* Для всех пуктов меню, кроме последнего */
+.menu-item:not(:last-child)
+{
+    margin-right: 14px; /*Отступ справа на 14px*/
+}
+.menu-link{
+    text-decoration: none /*Отлючаем подчеркивание ссылков в меню навигации*/;
+    color: inherit; /*Цвет берется у родителя*/
+}
+.button{
+    text-decoration: none; 
+    display: inline-block; /*Для нормального воспринимая отступов*/
+    padding: 10px 15px;/*Сверху и снизу 10, по краям 15*/
+    cursor: pointer; /*При наведении на кнопку курсор превращается в указатель*/
+}
+.button-link{
+    color: inherit;
+}
+.button-primary{
+    background:  #256EEB; /*Фон*/
+    border-radius: 5px; /*Скругление углов фона*/
+    color: white; /*Цвет текста*/
+}
+.search-panel{
+    height: 50px; /*Высота 50 пикселей, как требует макет*/ 
+    background: #256EEB;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+.search-input{
+    flex-grow: 1;/*Поиск растягивается на все свободное место*/
+    background-color:white;
+    border-radius: 5px; /*Радиус скругления*/
+    border:none; /*Отключааем серую обводку*/
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.search-button{
+    background: #256EEB;
+    border:none; /*Отключааем серую обводку*/
+    color:white;
+    cursor: pointer; /*При наведении на кнопку курсор превращается в указатель*/
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items:center;
+}
+.search-button-text
+{
+    margin-left: 5px;
+}

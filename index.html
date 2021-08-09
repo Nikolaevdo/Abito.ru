@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abito - сайт обьявлений</title>
-    <!--Подключение стилей  и  -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!--Убираем стандартные особености различных брузеров -->
-    <link rel="stylesheet" href="css/normalize.css">
-</head>
-<body>
+    <title>Abito - Сайт обьявлений</title>
+    <!-- Стили -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Подлючение шрифты ROBOTO от  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     
-</body></html>
+</head>
+    <body>
+        
+        <header class="header">
+            <div class="navbar">
+                <a href="/index.html" class="logo">
+                    <img class="logo-image" src="/source/logo.svg" alt="Abito:logo">
+                </a>
+
+                <nav class="navbar-menu">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#s" class="menu-link">Авто</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#s" class="menu-link">Недвижимость</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#s" class="menu-link">Работа</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#s" class="menu-link">Услуги</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="button-group">
+                    <a href="#" class="button button-link">Вход и регистрация</a>
+                    <a href="#" class="button button-primary">Подать обьявление</a>
+                </div>
+                <!-- /.button-group -->
+                
+            </div>
+            <!-- /.navbar -->
+            <div class="search-panel" placeholder="Поиск по объявлениям">
+                <input type="search" class="search-input">
+                <button class="search-button">
+                    <img src="/source/search-icon.svg" alt="">
+                    <span class="search-button-text">Найти</span>
+                </button>
+               
+                
+                </div>
+            <!-- /.search-panel -->
+        </header>
+    </body>
+</html>
