@@ -10,7 +10,7 @@ https://nikolaevdo.github.io/Abito.ru/
 
 ### Технологии в проекте
     -HTML
-    -CSS
+    -CSS (Grid,Flexbox)
     -Javascript
     -Normalize
     -Fansybox
