@@ -7,10 +7,11 @@
 Верстка производилась с макета на Figma. Исходный макет находиться в папке source.
 Посмотреть его можно тут:
 https://nikolaevdo.github.io/Abito.ru/
+#### Но почему то, стили не применяются на Github project
 
 ### Технологии в проекте
     -HTML
-    -CSS
+    -CSS (Grid,Flexbox)
     -Javascript
     -Normalize
     -Fansybox
