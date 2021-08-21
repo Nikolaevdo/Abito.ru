@@ -40,7 +40,7 @@ body{
     color: inherit; /*Цвет берется у родителя*/
 }
 .button{
-    text-decoration: none; 
+    text-decoration: none; /*Отлючаем подчеркивание ссылков в меню навигации*/
     display: inline-block; /*Для нормального воспринимая отступов*/
     padding: 10px 15px;/*Сверху и снизу 10, по краям 15*/
     cursor: pointer; /*При наведении на кнопку курсор превращается в указатель*/
@@ -56,10 +56,10 @@ body{
 
 .search-panel{
     height: 50px; /*Высота 50 пикселей, как требует макет*/ 
-    background: #256EEB;
+    background: #256EEB; /*Синий цвет поисковой панели*/
     border-radius: 5px;
-    display: flex;
-    padding: 3px;
+    display: flex; /*В одну линию*/
+    padding: 3px; /*внутренний отступ что добавляет "воздуха" обьекту*/
 }
 .search-input{
     flex-grow: 1;/*Поиск растягивается на все свободное место*/
@@ -70,14 +70,14 @@ body{
     padding-right: 22px;
 }
 .search-button{
-    background: #256EEB;
+    background: #256EEB;/* Фон синий*/
     border:none; /*Отключааем серую обводку*/
     color:white;
     cursor: pointer; /*При наведении на кнопку курсор превращается в указатель*/
     padding-left: 20px;
     padding-right: 17px;
     display: flex;
-    align-items:center;
+    align-items:center; /*Выравнивае предметов по центру*/
 }
 .search-button-text
 {
@@ -85,37 +85,45 @@ body{
 }
 .page-content{
     display: grid; /*Позволяет задать гибкую разметку*/
-    grid-template-columns: 9fr 3fr;
-    grid-column-gap: 30px;
+    grid-template-columns: 9fr 3fr; /*Макет делиться на 9fr и на 3fr */ 
+    grid-column-gap: 30px; /*промежуток между столбцами в макете сетки.*/
 
 }
-.cart-image{
-    border-radius: 10px;
-    width: 264px;
-    height: 178px;
-    object-fit: cover;   
-}
-.card-header{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
+
+.cards-title{
+    font-size: 24px;
+    line-height: 28px;/*определяет минимальную высоту строки текста*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;    
+    color: #0A143A;
 }
 .cards{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; /*Расположение карт в несколько линий*/
+}
+    .card-image{
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover;  /*Если картинка не может обрезаться, она будет автоматически подогнана браузерами*/ 
+}
+.card-header{
+    display: flex;
+    justify-content:space-between;/*Расбросать элементы по краям*/
+    align-items:center;
 }
 .card{
     margin-bottom: 20px;
     
 }
-.card:not(:nth-child(3n)){
+.card:not(:nth-child(3n)){/*Карточки, для всех элементов кроме 3го*/
     margin-right:  20px; 
 }
 .card-title{
     font-size: 16px;
     line-height: 19px;
-    color: #256EEB;
+    color: #256EEB; /*Синий*/
     margin-top: 12px;
     margin-bottom: 5px;
 }
@@ -125,7 +133,7 @@ body{
 .card-text{
     font-size: 14px;
     line-height: 16px;
-    color: #C4C4C4;
+    color: #C4C4C4; /*Сероватый*/
     margin-top: 0;
     margin-bottom: 4px;
     
@@ -133,12 +141,12 @@ body{
 .card-price{
     font-size: 16px;
     line-height: 19px;
-    color: #0A143A;
+    color: #0A143A; /*Черный цвет*/
     margin-bottom: 10px;
     display: block;
 }
 .like{
     background-color:#fff;
-    border-style: none;
+    border-style: none; /*Отключаем обводку*/
     cursor: pointer;
 }
