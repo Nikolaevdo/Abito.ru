@@ -1,15 +1,17 @@
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #0A143A;
-    
 }
-.header{
+.container{
     max-width: 1146px;  /* Максимальная ширина */
-    margin: auto; /*выравнивание по середине*/
-    margin-bottom: 0px;
+    margin: auto; /*выравнивание по середине*/   
+}    
+.header{
+    
     padding-top: 30px; /*Отступ сверху чтобы текст не сливался с краем страницы */
+    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 .navbar{
     
@@ -51,6 +53,7 @@ body{
     border-radius: 5px; /*Скругление углов фона*/
     color: white; /*Цвет текста*/
 }
+
 .search-panel{
     height: 50px; /*Высота 50 пикселей, как требует макет*/ 
     background: #256EEB;
@@ -79,4 +82,63 @@ body{
 .search-button-text
 {
     margin-left: 5px;
+}
+.page-content{
+    display: grid; /*Позволяет задать гибкую разметку*/
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px;
+
+}
+.cart-image{
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover;   
+}
+.card-header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    margin-bottom: 20px;
+    
+}
+.card:not(:nth-child(3n)){
+    margin-right:  20px; 
+}
+.card-title{
+    font-size: 16px;
+    line-height: 19px;
+    color: #256EEB;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card-link{
+    text-decoration: none /*Отлючаем подчеркивание ссылков в меню навигации*/;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-top: 0;
+    margin-bottom: 4px;
+    
+}
+.card-price{
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A143A;
+    margin-bottom: 10px;
+    display: block;
+}
+.like{
+    background-color:#fff;
+    border-style: none;
+    cursor: pointer;
 }
