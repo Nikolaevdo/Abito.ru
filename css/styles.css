@@ -158,3 +158,28 @@ body{
   .service {
     margin-bottom: 25px;
   }
+  .service-text{
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 217px;
+  }
+  .footer-text{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 5px;
+    
+  }
+  .footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Отключаем точки у маркированного списка меню*/ 
+    margin-bottom: 16px;
+  }
+  .footer-link{
+      color:inherit;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
