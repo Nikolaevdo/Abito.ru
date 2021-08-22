@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 14px;    
     color: #0A143A;
 }
 .container{
@@ -86,7 +86,7 @@ body{
 .page-content{
     display: grid; /*Позволяет задать гибкую разметку*/
     grid-template-columns: 9fr 3fr; /*Макет делиться на 9fr и на 3fr */ 
-    grid-column-gap: 30px; /*промежуток между столбцами в макете сетки.*/
+    grid-column-gap: 30px; /*промежуток между столбцами в  макете .*/
 
 }
 
@@ -106,7 +106,7 @@ body{
     border-radius: 10px;
     width: 264px;
     height: 178px;
-    object-fit: cover;  /*Если картинка не может обрезаться, она будет автоматически подогнана браузерами*/ 
+    object-fit: cover;  /* если не влазит, будет обрезаться**/ 
 }
 .card-header{
     display: flex;
@@ -123,7 +123,7 @@ body{
 .card-title{
     font-size: 16px;
     line-height: 19px;
-    color: #256EEB; /*Синий*/
+    color: #256eeb;/*Синий*/
     margin-top: 12px;
     margin-bottom: 5px;
 }
@@ -145,8 +145,16 @@ body{
     margin-bottom: 10px;
     display: block;
 }
-.like{
-    background-color:#fff;
-    border-style: none; /*Отключаем обводку*/
+.like {
+    background-color: #ffffff;
+    border: none;
     cursor: pointer;
+    margin-left:15px;
 }
+.sadebar .page-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .service {
+    margin-bottom: 25px;
+  }
